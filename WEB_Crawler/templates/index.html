@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D Animated Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>WEB CRAWLER</h1>
+        <!-- Input Box -->
+        <div class="input-box">
+            <form action="/find_urls" method="POST">
+                <label for="user-input">Enter the website link:</label>
+                <input type="text" name="website" id="user-input" placeholder="e.g: www.example.com" required>
+                <button type="submit">Find URLs</button>
+            </form>
+        </div>
+
+        <!-- Output Sections -->
+        {% if forms or url_with_params or Other_than_URL_parameters %}
+        <div class="output-container">
+            
+            <!-- Forms Found Output -->
+            <div class="output-box">
+                <h2>Forms Found</h2>
+                <ul>
+                    {% for form in forms %}
+                        <li>Action: {{ form['action'] }}, Method: {{ form['method'] }}, Inputs: {{ form['inputs'] }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- URLs with Query Parameters -->
+            <div class="output-box">
+                <h2>URLs with Query Parameters</h2>
+                <ul>
+                    {% for url in url_with_params %}
+                        <li>URL: {{ url }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- URLs without Query Parameters -->
+            <div class="output-box">
+                <h2>Other URLs</h2>
+                <ul>
+                    {% for other_url in Other_than_URL_parameters %}
+                        <li>{{ other_url }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
