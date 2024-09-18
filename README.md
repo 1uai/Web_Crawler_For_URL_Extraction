@@ -20,12 +20,12 @@ This project can be a game-changer in web security, allowing for proactive websi
 
 **For Running this Web:**
 You have to follow this path:
-
-**/WEB_Crawler
+**
+/WEB_Crawler
     /static
         /style.css
     /templates
         /index.html
-    Crawling_urls.py**
+    Crawling_urls.py
 
 NOte: First you have to run the Crawling_urls.py and then in that output you get the url. Click the url you go to the website. Now just give the url of the website and wait for a few minutes to extract the urls.
