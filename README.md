@@ -1,4 +1,3 @@
-Here’s how you can structure the same information for your GitHub README file:
 
 ---
 
@@ -28,24 +27,6 @@ This tool is particularly effective for:
 
 By collecting all internal URLs, this crawler aids in the early identification of vulnerabilities, contributing to a more secure web environment.
 
-## 📦 Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd your-repository
-   ```
-3. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the Flask app:
-   ```bash
-   python app.py
-   ```
 
 ## 🤝 Contributions
 Feel free to open a pull request if you'd like to contribute or suggest improvements!
