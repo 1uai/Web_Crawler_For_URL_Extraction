@@ -62,5 +62,3 @@ This project is a **SQL Injection Scanner** built with **Flask** to help detect 
 - Selenium
 - Requests
 ---
-
-This README gives a complete overview of your project and helps other developers understand its functionality and structure. You can adapt the URL, license, and contribution details as necessary.
